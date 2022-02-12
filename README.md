@@ -1,7 +1,7 @@
 # icp_check
 批量ICP备案查询
 
-pip install -f requirements.txt
+pip install -r requirements.txt
 
 python3 icp_check.py
 
