@@ -21,7 +21,7 @@ def icp(domain,line):
 	
 if __name__ == "__main__":
 	for line in open('domain.txt'):
-		domain=re.findall('[^/"><\.]{1,}\.com|[^/"><\.]{1,}\.cn|[^/"><\.]{1,}\.net\.cn\.top', line)
+		domain=re.findall('[^/"><\.]{1,}\.com|[^/"><\.]{1,}\.gov.cn|[^/"><\.]{1,}\.cn|[^/"><\.]{1,}\.net\.cn\.top', line)
 		if domain:
 			icp(domain[0],line.replace('\n',''))
         	
